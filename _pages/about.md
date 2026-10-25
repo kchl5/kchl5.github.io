@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Cambridge, UK</p>
+    <p><i class="fa-solid fa-location-dot"></i> Based in Cambridge, UK</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -36,7 +36,7 @@ I am looking for machine learning scientist or data scientist roles where I can 
 Outside work, you'll usually find me hiking in the mountains or on the climbing wall.
 
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
+  <div class="hobby-photo mt-3 mt-md-0">
     {% include figure.liquid loading="lazy" path="assets/img/hiking.jpg" class="img-fluid rounded z-depth-1" alt="Kevin hiking on the Zhuilu Old Road, Taroko National Park, Taiwan" caption="Zhuilu Old Road, Taroko National Park, Taiwan" %}
   </div>
 </div>
