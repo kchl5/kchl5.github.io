@@ -23,10 +23,6 @@ cv:
         studyType: PhD
         start_date: 2022-09
         end_date: 2026-12
-        highlights:
-          - "PerturbGen (project lead, co-first author; bioRxiv preprint): generative Transformer built on a single-cell foundation model (pre-trained on 107M cells) that predicts how perturbations reshape cell differentiation. I led its in silico screen of 5,700 genes, which nominated new regulators of blood-cell development that collaborators then validated experimentally."
-          - "Multimodal generative models that translate gene-expression responses into cell-morphology images, connecting two key readouts of high-throughput drug and CRISPR screens (project lead; manuscript under review)."
-          - "Trained 100M+ parameter models on multi-GPU clusters; core contributor to the open-source PerturbGen Python package."
 
       - institution: ETH Zürich
         location: Basel, Switzerland
@@ -34,6 +30,8 @@ cv:
         studyType: MSc
         start_date: 2018-09
         end_date: 2021-08
+        highlights:
+          - "MSc thesis (wet lab and computational): engineered CRISPR-Cas9 knockout and knock-in stem cell lines, grew them into cerebral organoids, and built image-analysis pipelines for 4D light-sheet lineage tracing (published in Nature Methods)."
 
       - institution: ETH Zürich
         location: Zürich, Switzerland
@@ -43,6 +41,16 @@ cv:
         end_date: 2018-09
 
     Experience:
+      - company: Wellcome Sanger Institute / University of Cambridge
+        position: PhD Researcher, Machine Learning for Perturbation Biology
+        location: Cambridge, UK
+        start_date: 2022-09
+        end_date: 2026-12
+        highlights:
+          - "PerturbGen (project lead, co-first author; bioRxiv preprint): generative Transformer built on a single-cell foundation model (pre-trained on 107M cells) that predicts how perturbations reshape cell differentiation. I led its in silico screen of 5,700 genes, which nominated new regulators of blood-cell development that collaborators then validated experimentally."
+          - "Multimodal generative models that translate gene-expression responses into cell-morphology images, connecting two key readouts of high-throughput drug and CRISPR screens (project lead; manuscript under review)."
+          - "Trained 100M+ parameter models on multi-GPU clusters; core contributor to the open-source PerturbGen Python package."
+
       - company: Roche Pharma R&D
         position: Data & Analytics Specialist; Data Science Intern
         location: Basel, Switzerland
@@ -52,14 +60,6 @@ cv:
           - Built production cloud data pipelines (GCP, CI/CD) bringing laboratory instrument data into a central data lake, working with scientists and engineers across the US and EU.
           - Automated analytical workflows for lab scientists (Python, R Shiny, Plotly), saving about 30 minutes per analytical run.
           - Worked in Agile/Scrum teams developing software for lab scientists.
-
-      - company: ETH Zürich, D-BSSE
-        position: MSc thesis (wet lab and computational)
-        location: Basel, Switzerland
-        start_date: 2020-04
-        end_date: 2020-12
-        highlights:
-          - Engineered CRISPR-Cas9 knockout and knock-in stem cell lines, grew them into cerebral organoids, and built image-analysis pipelines for 4D light-sheet lineage tracing (published in Nature Methods).
 
     Skills:
       - name: Machine learning

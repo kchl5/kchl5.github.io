@@ -276,3 +276,13 @@ html body .hobby-photo .caption {
   font-size: 0.85rem;
   color: var(--global-text-color-light);
 }
+
+/* Phones: show the profile photo centred above the bio instead of squeezing the text */
+@media (max-width: 575.98px) {
+  html body .profile {
+    float: none !important;
+    width: 180px;
+    max-width: 60%;
+    margin: 0 auto 1.25rem auto;
+  }
+}
