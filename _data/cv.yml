@@ -51,6 +51,7 @@ cv:
         highlights:
           - Built production cloud data pipelines (GCP, CI/CD) bringing laboratory instrument data into a central data lake, working with scientists and engineers across the US and EU.
           - Automated analytical workflows for lab scientists (Python, R Shiny, Plotly), saving about 30 minutes per analytical run.
+          - Worked in Agile/Scrum teams developing software for lab scientists.
 
       - company: ETH Zürich, D-BSSE
         position: MSc thesis (wet lab and computational)
@@ -69,7 +70,7 @@ cv:
         keywords: "Single-cell transcriptomics (Scanpy), Cell Painting, perturbation screens"
       - name: Engineering
         icon: fa-solid fa-code
-        keywords: "Python packaging, Git/GitHub, CI/CD, HPC, GCP"
+        keywords: "Python packaging, Git/GitHub, CI/CD, HPC, GCP, Agile/Scrum"
       - name: Wet lab
         icon: fa-solid fa-flask
         keywords: "CRISPR editing, stem cell and organoid culture"
