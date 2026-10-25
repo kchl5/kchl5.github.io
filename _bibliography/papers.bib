@@ -1,115 +1,111 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@article{ly2026perturbgen,
+  abbr        = {bioRxiv},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  selected    = {true},
+  title       = {Predicting how perturbations reshape cellular trajectories with PerturbGen},
+  author      = {Ly, Kevin Chi Hao and Miraki Feriz, Adib and Isobe, Tomoya and Vahidi, Amirhossein and Vaghari, Delshad and Rostron, Anthony and Quiroga Londo{\~n}o, Mariana and Mende, Nicole and Vijayabaskar, M. S. and Moullet, Marie and Foster, April Rose and Graves, Emily and Torabi, Fereshteh and Admane, Chloe and Horsfall, David and Basurto-Lozada, Daniela and Stephenson, Emily and Botting, Rachel A. and Iskander, Deena and Webb, Simone and Goh, Issac and Jafree, Daniyal J. and Sturgess, Katherine H. M. and Scott, Jonathan and Sendama, Wezi and Magnani, Laura and Hannah, Rebecca and Asadollahzadeh, Hesam and Holland, Ash and Prete, Martin and Simpson, John and Roy, Anindita and Roberts, Irene and Jardine, Laura and Laurenti, Elisa and Trynka, Gosia and Wilson, Nicola K. and Haniffa, Muzlifah and G{\"o}ttgens, Berthold and Lotfollahi, Mo},
+  journal     = {bioRxiv},
+  year        = {2026},
+  doi         = {10.64898/2026.03.04.709254},
+  html        = {https://www.biorxiv.org/content/10.64898/2026.03.04.709254v1},
+  code        = {https://github.com/Lotfollahi-lab/Perturbgen},
+  website     = {https://cellatlas.io/perturbgen},
+  abstract    = {A major challenge in biology is predicting how cells transition between states over time and how perturbations disrupt these transitions. Understanding such dynamics is critical for identifying interventions that reverse pathological programs or reprogram cells toward desired states. Although recent computational approaches can predict single-cell perturbation responses in silico, they cannot predict responses across dynamic cell trajectories, for example how early perturbations reconfigure later cell states. To address this gap, we introduce PerturbGen, a generative foundation model trained on over 100 million single-cell transcriptomes that predicts perturbation responses along cellular trajectories. PerturbGen predicts how genetic perturbation at source state shapes downstream states, alters gene programs and trajectories across time, for example in differentiation or disease progression. We apply PerturbGen to three newly generated multi-condition human single-cell datasets spanning immune responses, hematopoiesis and skin development. In an in vivo immune challenge, PerturbGen predicts that knocking out an IL1B signal in myeloid cells attenuates later cytokine-interferon programs, with downstream changes consistent with a reversal of IL-1β stimulation signature. In hematopoiesis, anchoring perturbation-induced programs to human genetics enables simulation of monogenic blood disorders, recapitulates established disease-associated biology whilst systematically revealing lineage-specific programs, including in lineages where this was not previously possible. In skin organoids, PerturbGen predicted that Wnt activation enhances stromal differentiation recapitulating the trajectory observed in human prenatal skin, findings that were functionally validated by experimentally activating Wnt signaling. Together, PerturbGen extends modeling of gene perturbations from static to dynamic cellular systems. We envision PerturbGen enabling the creation of in silico, trajectory-aware perturbation atlases and virtual cells across diverse biological scenarios, supporting optimization of disease models and prioritization of candidate molecular interventions for therapeutic discovery.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@inproceedings{vahidi2026dirmoe,
+  abbr        = {ICLR},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  selected    = {true},
+  title       = {DirMoE: Dirichlet-routed Mixture of Experts},
+  author      = {Vahidi, Amirhossein and Asadollahzadeh, Hesam and Akhavan Attar, Navid and Moullet, Marie and Ly, Kevin and Yang, Xingyi and Lotfollahi, Mohammad},
+  booktitle   = {International Conference on Learning Representations (ICLR)},
+  year        = {2026},
+  html        = {https://openreview.net/forum?id=a15cDnzr6r},
+  arxiv       = {2602.09001},
+  abstract    = {Mixture-of-Experts (MoE) models have demonstrated exceptional performance in large-scale language models. Existing routers typically rely on non-differentiable Top-$k$+Softmax, limiting their performance and scalability. We argue that two distinct decisions, which experts to activate and how to distribute expert contributions among them, are conflated in standard Top-$k$+Softmax. We introduce Dirichlet-Routed MoE (DirMoE), a novel end-to-end differentiable routing mechanism built on a Dirichlet variational autoencoder framework. This design fundamentally disentangles the core routing problems: expert selection, modeled by a Bernoulli component, and expert contribution among chosen experts, handled by a Dirichlet component. The entire forward pass remains fully differentiable through the use of Gumbel-Sigmoid relaxation for the expert selection and implicit reparameterization for the Dirichlet distribution. Our training objective, a variational ELBO, includes a direct sparsity penalty that precisely controls the number of active experts in expectation, alongside a schedule for key hyperparameters that guides the model from an exploratory to a definitive routing state. Moreover, our DirMoE router matches or exceeds other methods while improving expert specialization.}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@article{moullet2026gene,
+  abbr        = {bioRxiv},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {Self-supervised learning for a gene program-centric view of cell states},
+  author      = {Moullet, Marie and Isobe, Tomoya and Vahidi, Amirhossein and Leonardi, Carlo and Paulas-Condori, Licyel and Soelistyo, Christopher and Steele, Lloyd and Ly, Kevin Chi Hao and Quiroga Londo{\~n}o, Mariana and Mende, Nicole and Stephenson, Emily and Iskander, Deena and Webb, Simone and Goh, Issac and Vijayabaskar, M. S. and Liu, Qi and Jafree, Daniyal J. and Asadollahzadeh, Hesam and Ram{\'i}rez-Su{\'a}stegui, Ciro and Merchant, Arpit and Roberts, Kenny and Rumney, Benjamin and Chan, Hon Man and Holland, Ash and Prete, Martin and Horsfall, David and Basurto-Lozada, Daniela and Lee, John Y. W. and Winheim, Elena and Foster, April Rose and Vilarrasa-Blasi, Roser and Hannah, Rebecca and Mahil, Satveer K. and Smith, Catherine and Roy, Anindita and Roberts, Irene and Laurenti, Elisa and G{\"o}ttgens, Berthold and Vento-Tormo, Roser and Haniffa, Muzlifah and Wilson, Nicola K. and Lotfollahi, Mo},
+  journal     = {bioRxiv},
+  year        = {2026},
+  doi         = {10.64898/2026.03.24.713961},
+  html        = {https://doi.org/10.64898/2026.03.24.713961},
+  abstract    = {Single-cell omics has extended the biological interrogation of cell state from examining the expression of individual genes to unbiased profiling of tens of thousands of genes at once. However, extracting biological insights from such high-dimensional data remains challenging. To enable downstream analyses, many computational approaches compress cell state into a single latent representation. This can obscure the structure of underlying gene programs (GP), defined as coordinated sets of biologically related genes, such as signalling pathway response modules or transcription factor targets. Here, we present Tripso, a self-supervised transformer deep learning model which learns multiple GP-specific embeddings from predefined GPs, while also enabling the discovery of novel, data-driven GPs. Tripso facilitates principled comparisons across development, disease, and experimental systems. Firstly, in a dataset of human hematopoietic cells spanning prenatal development through adulthood and aging and including newly generated data, Tripso resolved age-specific GP patterns, including elevated JAK-STAT activity in pediatric hematopoietic cells and postnatal shifts in IKZF1 GP activity during B cell differentiation. Secondly, leveraging Tripso GP embeddings and comparing in vivo to in vitro data, we hypothesized and experimentally validated that inhibition of the SEC61 translocon improved maintenance of hematopoietic stem cells in culture. Finally, Tripso’s capacity for data-driven GP discovery revealed a previously uncharacterized tissue-resident memory T cell GP with increased activity in atopic dermatitis. Its spatial co-localization with sebaceous gland-associated immune niches was demonstrated in spatial transcriptomic and proteomic data. Thus, by moving beyond single embeddings of cellular states, Tripso enables interpretable and actionable discoveries, demonstrating how GP-centric modelling can generate hypotheses with substantial biomedical relevance. By anchoring cellular representations in meaningful GPs, Tripso establishes a principled and biologically grounded framework towards the development of interpretable virtual cell models.}
 }
 
-@book{przibram1967letters,
+@article{gozzard2026division,
+  abbr        = {bioRxiv},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {Division state reveals hidden genetic regulation during T cell activation and identifies immune disease--linked gene programmes},
+  author      = {Gozzard, Megan and Sonehara, Kyuto and Ly, Kevin and Rupall, Tarran and Ke, Ziying and Ibarra-Soria, Ximena and Lotfollahi, Mohammad and Soskic, Blagoje and Jones, Carla P. and Bakker, Olivier B. and Trynka, Gosia},
+  journal     = {bioRxiv},
+  year        = {2026},
+  doi         = {10.64898/2026.02.22.707277},
+  html        = {https://doi.org/10.64898/2026.02.22.707277},
+  abstract    = {A major challenge in human genetics is to connect disease-associated variants to the cellular functions they perturb. Variants associated with immune-mediated disease have implicated CD4⁺ T-cell activation as a disease-causal process; however, it remains unresolved whether these variants act on pathways initiating cell division, driving effector differentiation, or maintaining proliferative capacity. Activated T cells comprise mixtures of cells that have undergone different numbers of divisions, potentially obscuring genetic effects that act at specific stages of this process. Here, we study CD4⁺ T-cell activation through cell division using division-resolved single-cell transcriptomics of naive, memory and regulatory T cells. We show that division state constitutes an important axis of transcriptional organisation, with approximately one third of genes exhibiting division-dependent regulation across shared and subset-specific programmes. We develop CellDivider, a machine-learning model that accurately infers proliferative state directly from single-cell transcriptomes, enabling a scalable approach for cohort level mapping of variant effects on cell proliferation phenotypes. Incorporating inferred division state into single-cell eQTL models reveals regulatory effects that are attenuated or missed when cells are analysed by activation time alone. Finally, we resolve gene expression programmes that govern distinct stages of T cell activation and proliferation. We show that polygenic immune disease risk preferentially converges on early activation and differentiation modules, rather than on proliferative capacity itself. Consistent with this model, division-resolved analysis of the pleiotropic immune risk gene RPS26 localises its genetic effects to early division states, providing mechanistic insight into its broad disease associations. Together, these findings illustrate how resolving dynamic cellular consequences of activation sharpens variant-to-function inference in immune disease genetics.}
+}
+
+@article{jeong2025sigmma,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {SIGMMA: Hierarchical Graph-Based Multi-Scale Multi-modal Contrastive Alignment of Histopathology Image and Spatial Transcriptome},
+  author      = {Jeong, Dabin and Vahidi, Amirhossein and Ram{\'i}rez-Su{\'a}stegui, Ciro and Moullet, Marie and Ly, Kevin and Sanian, Mohammad Vali and Birk, Sebastian and Chang, Yinshui and Boxall, Adam and Jafree, Daniyal and Steele, Lloyd and Vijayabaskar, M. S. and Haniffa, Muzlifah and Lotfollahi, Mohammad},
+  journal     = {arXiv preprint arXiv:2511.15464},
+  year        = {2025},
+  arxiv       = {2511.15464},
+  html        = {https://arxiv.org/abs/2511.15464},
+  abstract    = {Recent advances in computational pathology have leveraged vision-language models to learn joint representations of Hematoxylin and Eosin (HE) images with spatial transcriptomic (ST) profiles. However, existing approaches typically align HE tiles with their corresponding ST profiles at a single scale, overlooking fine-grained cellular structures and their spatial organization. To address this, we propose Sigmma, a multi-modal contrastive alignment framework for learning hierarchical representations of HE images and spatial transcriptome profiles across multiple scales. Sigmma introduces multi-scale contrastive alignment, ensuring that representations learned at different scales remain coherent across modalities. Furthermore, by representing cell interactions as a graph and integrating inter- and intra-subgraph relationships, our approach effectively captures cell-cell interactions, ranging from fine to coarse, within the tissue microenvironment. We demonstrate that Sigmma learns representations that better capture cross-modal correspondences, leading to an improvement of avg. 9.78\% in the gene-expression prediction task and avg. 26.93\% in the cross-modal retrieval task across datasets. We further show that it learns meaningful multi-tissue organization in downstream analyses.}
+}
+
+@article{kapetanovic2024engineered,
+  abbr        = {Nat. Biomed. Eng.},
+  bibtex_show = {true},
+  title       = {Engineered allogeneic T cells decoupling T-cell-receptor and CD3 signalling enhance the antitumour activity of bispecific antibodies},
+  author      = {Kapetanovic, Edo and Weber, C{\'e}dric R. and Bruand, Marine and P{\"o}schl, Daniel and Kucharczyk, Jakub and Hirth, Elisabeth and Dietsche, Claudius and Khan, Riyaz and Wagner, Bastian and Belli, Olivier and Vazquez-Lombardi, Rodrigo and Castellanos-Rueda, Roc{\'i}o and Di Roberto, Raphael B. and Kalinka, Kevin and Raess, Luca and Ly, Kevin and Rai, Shivam and Dittrich, Petra S. and Platt, Randall J. and Oricchio, Elisa and Reddy, Sai T.},
+  journal     = {Nature Biomedical Engineering},
+  volume      = {8},
+  number      = {12},
+  pages       = {1665--1681},
+  year        = {2024},
+  doi         = {10.1038/s41551-024-01255-x},
+  html        = {https://doi.org/10.1038/s41551-024-01255-x},
+  abstract    = {Bispecific antibodies (biAbs) used in cancer immunotherapies rely on functional autologous T cells, which are often damaged and depleted in patients with haematological malignancies and in other immunocompromised patients. The adoptive transfer of allogeneic T cells from healthy donors can enhance the efficacy of biAbs, but donor T cells binding to host-cell antigens cause an unwanted alloreactive response. Here we show that allogeneic T cells engineered with a T-cell receptor that does not convert antigen binding into cluster of differentiation 3 (CD3) signalling decouples antigen-mediated T-cell activation from T-cell cytotoxicity while preserving the surface expression of the T-cell-receptor-CD3 signalling complex as well as biAb-mediated CD3 signalling and T-cell activation. In mice with CD19+ tumour xenografts, treatment with the engineered human cells in combination with blinatumomab (a clinically approved biAb) led to the recognition and clearance of tumour cells in the absence of detectable alloreactivity. Our findings support the development of immunotherapies combining biAbs and 'off-the-shelf' allogeneic T cells.}
+}
+
+@article{piccione2024formulation,
+  abbr        = {Int. J. Pharm.},
+  bibtex_show = {true},
+  title       = {Computer-Aided formulation design for pharmaceutical drug product development, part 01: Materials exploration through a visualization tool},
+  author      = {Piccione, Patrick M. and Lang, Moritz N. and Amado Becker, Felipe and Hofstetter, Albert and Marchal, St{\'e}phanie and Ly, Kevin and Legras, Valentin and Ewert, Andreas and Kohler, David and Maurer, Reto and Willecke, Nina and Burwood, Ryan and Kroll, Paul},
+  journal     = {International Journal of Pharmaceutics},
+  volume      = {667},
+  pages       = {124891},
+  year        = {2024},
+  doi         = {10.1016/j.ijpharm.2024.124891},
+  html        = {https://doi.org/10.1016/j.ijpharm.2024.124891},
+  abstract    = {An interactive tool has been developed to help design oral solid dosage form formulations. The tool enables quantitative explorations and comparisons of physical, bulk, and mechanical properties, and takes into account functional characteristics as well. In this manner, comparisons and clustering of both excipients and APIs can be carried out. These comparisons enable the generation of alternatives as well as surrogate identification, so as to spare resources and material. Multiple data sources were merged to create a ``joint'' data table with all relevant properties. Four main workflow activities are supported: Explore Materials, Search Similar APIs, Search Similar Excipients and Search Material Clusters. Multi-dimensional filtering can be superimposed to each functionality. Suggested visualizations are made particularly accessible by providing them as ``standard plots''. The underlying philosophy is to empower formulation scientists to explore options, rather than prescribe decisions on exclusively mathematical grounds. The tool described here is the first step towards a holistic optimization incorporating predictions of mixture properties. Methodology of use is illustrated through three material selection application examples.}
+}
+
+@article{he2022lineage,
+  abbr        = {Nat. Methods},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Lineage recording in human cerebral organoids},
+  author      = {He, Zhisong and Maynard, Ashley and Jain, Akanksha and Gerber, Tobias and Petri, Rebecca and Lin, Hsiu-Chuan and Santel, Malgorzata and Ly, Kevin and Dupr{\'e}, Jean-Samuel and Sidow, Leila and Sanchis Calleja, Fatima and Jansen, Sophie M. J. and Riesenberg, Stephan and Camp, J. Gray and Treutlein, Barbara},
+  journal     = {Nature Methods},
+  volume      = {19},
+  number      = {1},
+  pages       = {90--99},
+  year        = {2022},
+  doi         = {10.1038/s41592-021-01344-8},
+  html        = {https://doi.org/10.1038/s41592-021-01344-8},
+  abstract    = {Induced pluripotent stem cell (iPSC)-derived organoids provide models to study human organ development. Single-cell transcriptomics enable highly resolved descriptions of cell states within these systems; however, approaches are needed to directly measure lineage relationships. Here we establish iTracer, a lineage recorder that combines reporter barcodes with inducible CRISPR-Cas9 scarring and is compatible with single-cell and spatial transcriptomics. We apply iTracer to explore clonality and lineage dynamics during cerebral organoid development and identify a time window of fate restriction as well as variation in neurogenic dynamics between progenitor neuron families. We also establish long-term four-dimensional light-sheet microscopy for spatial lineage recording in cerebral organoids and confirm regional clonality in the developing neuroepithelium. We incorporate gene perturbation (iTracer-perturb) and assess the effect of mosaic TSC2 mutations on cerebral organoid development. Our data shed light on how lineages and fates are established during cerebral organoid formation. More broadly, our techniques can be adapted in any iPSC-derived culture system to dissect lineage alterations during normal or perturbed development.}
 }
